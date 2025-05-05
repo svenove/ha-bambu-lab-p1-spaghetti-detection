@@ -68,6 +68,16 @@ blueprint:
               value: stop
             - label: Warn
               value: warn
+            - label: Script
+              value: script
+    script_to_run:
+      name: Script to run
+      description: Run this script on spaghetti detection
+      default: ""
+      selector:
+          entity:
+            filter:
+              - domain: script
     notification_service:
       name: Mobile devices notification service
       description: >-
